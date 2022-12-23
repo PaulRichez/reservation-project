@@ -1,1 +1,30 @@
-<p>register works!</p>
+<div class="card">
+    <p-card>
+        <div class=" flex flex-column justify-content-center align-items-center">
+            <p-button styleClass="px-3 p-button-raised p-button-text">
+                <ng-template pTemplate="content">
+                    <img alt="logo" src="/assets/icons/google.svg" style="width: 2rem" />
+                    Connexion avec Google
+                </ng-template>
+            </p-button>
+        </div>
+        <p-divider align="center" type="dashed">
+            <b>Ou</b>
+        </p-divider>
+        <div class="field">
+            <label for="email" class="block">Adresse email</label>
+            <input id="email" type="email" aria-describedby="email" pInputText placeholder="your@email.com"
+                class="w-full" />
+        </div>
+        <div class="field">
+            <label for="password" class="block">Mot de passe</label>
+            <input id="password" type="password" aria-describedby="password" pInputText placeholder="***********"
+                class="w-full" />
+        </div>
+        <div class=" flex flex-column justify-content-center">
+            <button pButton pRipple type="submit" label="S'inscrire" class="p-button-raised p-button-text"></button>
+            <button pButton pRipple type="button" label="Se connecter"
+                class="p-button-secondary p-button-text"></button>
+        </div>
+    </p-card>
+</div>
