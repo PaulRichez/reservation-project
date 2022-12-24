@@ -3,6 +3,7 @@ import { LazyLoadEvent } from 'primeng/api';
 import { ApiService } from '../../core/services/api.service';
 import * as qs from 'qs'
 import { faUtensils } from '@fortawesome/free-solid-svg-icons';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -13,10 +14,12 @@ export class MainComponent {
   establishments!: any[];
   pagination: any;
   loadingData: boolean = true;
-  constructor(private api: ApiService) {
+  constructor(private api: ApiService, private router: Router) {
 
   }
-
+  goToEtablishment(id: string) {
+    this.router.navigate(['dashboard', 'etablishment', id])
+  }
   fetchData(event: LazyLoadEvent) {
     const sort = event.sortField ? [`${event.sortField}:${event.sortOrder === 1 ? 'asc' : 'desc'}`] : {};
     const query = qs.stringify({

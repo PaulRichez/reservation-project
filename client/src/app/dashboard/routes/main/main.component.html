@@ -3,7 +3,7 @@
 <p-table #dt1 [value]="establishments" dataKey="id" [rows]="5" [showCurrentPageReport]="true" [loading]="loadingData"
     [paginator]="true" currentPageReportTemplate="" [totalRecords]="pagination?.total"
     [globalFilterFields]="['name','country.name','representative.name','status']" [lazy]="true"
-    (onLazyLoad)="fetchData($event)">
+    (onLazyLoad)="fetchData($event)" selectionMode="single">
     <ng-template pTemplate="caption">
         <div class="flex">
             <span class="p-input-icon-left ml-auto w-full">
@@ -21,7 +21,7 @@
         </tr>
     </ng-template>
     <ng-template pTemplate="body" let-etablishment>
-        <tr>
+        <tr class="cursor-pointer" (click)="goToEtablishment(etablishment.id)">
             <td>{{etablishment.name}}</td>
             <td><fa-icon [icon]="faUtensils"></fa-icon> {{etablishment.type}}</td>
             <td><app-state [label]="etablishment.state"></app-state></td>
