@@ -20,11 +20,11 @@
             <th pSortableColumn="state" style="width:20%">Statut <p-sortIcon field="state"></p-sortIcon></th>
         </tr>
     </ng-template>
-    <ng-template pTemplate="body" let-etablishment>
-        <tr class="cursor-pointer" (click)="goToEtablishment(etablishment.id)">
-            <td>{{etablishment.name}}</td>
-            <td><fa-icon [icon]="faUtensils"></fa-icon> {{etablishment.type}}</td>
-            <td><app-state [label]="etablishment.state"></app-state></td>
+    <ng-template pTemplate="body" let-establishment>
+        <tr class="cursor-pointer" (click)="goToestablishment(establishment.id)">
+            <td>{{establishment.name}}</td>
+            <td><fa-icon [icon]="faUtensils"></fa-icon> {{establishment.type}}</td>
+            <td><app-state [label]="establishment.state"></app-state></td>
         </tr>
     </ng-template>
     <ng-template pTemplate="emptymessage">

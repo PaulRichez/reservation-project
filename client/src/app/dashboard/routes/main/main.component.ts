@@ -17,8 +17,8 @@ export class MainComponent {
   constructor(private api: ApiService, private router: Router) {
 
   }
-  goToEtablishment(id: string) {
-    this.router.navigate(['dashboard', 'etablishment', id])
+  goToestablishment(id: string) {
+    this.router.navigate(['dashboard', 'establishment', id])
   }
   fetchData(event: LazyLoadEvent) {
     const sort = event.sortField ? [`${event.sortField}:${event.sortOrder === 1 ? 'asc' : 'desc'}`] : {};

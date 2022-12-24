@@ -12,4 +12,9 @@ export class ApiService {
   public find(endpoint: string, query: string) {
     return this.http.get<any>(`${environment.apiUrl}/api/${endpoint}?${query}`);
   }
+
+  public findOne(endpoint: string, id: string | number) {
+    id = id.toString();
+    return this.http.get<any>(`${environment.apiUrl}/api/${endpoint}/${id}?populate=deep`);
+  }
 }

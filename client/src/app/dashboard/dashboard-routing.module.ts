@@ -7,7 +7,7 @@ const routes: Routes = [
   {
     path: '', component: DashboardComponent, children: [
       { path: '', component: MainComponent },
-      { path: 'etablishment', loadChildren: () => import('./routes/etablishment/etablishment.module').then(m => m.EtablishmentModule) }
+      { path: 'establishment', loadChildren: () => import('./routes/etablishment/establishment.module').then(m => m.establishmentModule) }
     ]
   },
 ];
