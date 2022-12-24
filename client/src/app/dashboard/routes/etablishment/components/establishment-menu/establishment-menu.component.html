@@ -1,1 +1,16 @@
-<p>establishment-menu works!</p>
+<ul class="list-none">
+    <li>
+        <button pButton pRipple type="button" icon="fa-solid fa-people-roof" label="Reservations"
+            [routerLink]="['reservations']" [routerLinkActive]="'primary'"
+            class="p-button-secondary p-button-text w-full"></button>
+    </li>
+    <li>
+        <button pButton pRipple type="button" icon="fa-solid fa-people-roof" label="Stats" [routerLink]="['stats']"
+            [routerLinkActive]="'primary'" class="p-button-secondary p-button-text w-full"></button>
+    </li>
+    <li>
+        <button pButton pRipple type="button" icon="fa-solid fa-people-roof" label="Paramètres"
+            [routerLink]="['settings']" [routerLinkActive]="'primary'"
+            class="p-button-secondary p-button-text w-full"></button>
+    </li>
+</ul>

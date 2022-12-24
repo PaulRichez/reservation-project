@@ -3,19 +3,23 @@ import { CommonModule } from '@angular/common';
 
 import { establishmentRoutingModule } from './establishment-routing.module';
 import { establishmentComponent } from './establishment.component';
-import { InfosComponent } from './routes/infos/infos.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { EstablishmentMenuComponent } from './components/establishment-menu/establishment-menu.component';
 import { ReservationsComponent } from './routes/reservations/reservations.component';
+import { StatsComponent } from './routes/stats/stats.component';
+import { SettingsComponent } from './routes/settings/settings.component';
+import { CalendarComponent } from './routes/reservations/components/calendar/calendar.component';
 
 
 
 @NgModule({
   declarations: [
     establishmentComponent,
-    InfosComponent,
     EstablishmentMenuComponent,
     ReservationsComponent,
+    StatsComponent,
+    SettingsComponent,
+    CalendarComponent,
   ],
   imports: [
     CommonModule,
