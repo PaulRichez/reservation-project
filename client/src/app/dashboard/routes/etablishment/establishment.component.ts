@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ApiService } from '../../core/services/api.service';
-import { faUtensils } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-establishment',
@@ -9,7 +8,6 @@ import { faUtensils } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./establishment.component.scss']
 })
 export class establishmentComponent {
-  faUtensils = faUtensils;
   establishment: any;
   loadingData: boolean = true;
 

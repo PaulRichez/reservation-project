@@ -1,7 +1,6 @@
 <div id="etab-upper">
     <div class="flex flex-row align-items-center gap-3">
         <div class="flex flex-row align-items-center gap-1">
-            <fa-icon [icon]="faUtensils"></fa-icon>
             <h3>{{ establishment?.name }}</h3>
         </div>
         <app-state *ngIf="!loadingData" [label]="establishment.state"></app-state>

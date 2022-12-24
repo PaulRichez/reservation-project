@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { LazyLoadEvent } from 'primeng/api';
 import { ApiService } from '../../core/services/api.service';
 import * as qs from 'qs'
-import { faUtensils } from '@fortawesome/free-solid-svg-icons';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-main',
@@ -10,7 +9,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent {
-  faUtensils = faUtensils;
   establishments!: any[];
   pagination: any;
   loadingData: boolean = true;

@@ -9,7 +9,6 @@ import { AvatarModule } from 'primeng/avatar';
 import { TableModule } from 'primeng/table';
 import { HttpClientModule } from '@angular/common/http';
 import { StateComponent } from './components/state/state.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 const PrimesModules = [
   CardModule,
   InputTextModule,
@@ -28,11 +27,10 @@ const PrimesModules = [
     ReactiveFormsModule,
     PrimesModules,
     HttpClientModule,
-    FontAwesomeModule
   ],
   exports: [
     PrimesModules,
     StateComponent,
-    FontAwesomeModule]
+    ]
 })
 export class SharedModule { }
