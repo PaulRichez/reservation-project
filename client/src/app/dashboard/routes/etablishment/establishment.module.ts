@@ -6,7 +6,7 @@ import { establishmentComponent } from './establishment.component';
 import { InfosComponent } from './routes/infos/infos.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { EstablishmentMenuComponent } from './components/establishment-menu/establishment-menu.component';
-import { CalendarComponent } from './routes/calendar/calendar.component';
+import { ReservationsComponent } from './routes/reservations/reservations.component';
 
 
 
@@ -15,7 +15,7 @@ import { CalendarComponent } from './routes/calendar/calendar.component';
     establishmentComponent,
     InfosComponent,
     EstablishmentMenuComponent,
-    CalendarComponent,
+    ReservationsComponent,
   ],
   imports: [
     CommonModule,
