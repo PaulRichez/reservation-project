@@ -39,6 +39,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "qs"
+            ],
             "outputPath": "dist/reservation-project",
             "index": "src/index.html",
             "main": "src/main.ts",

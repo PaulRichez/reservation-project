@@ -6,7 +6,8 @@
 .p-treenode-selectable,
 .p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link:not(.p-disabled):focus,
 .p-listbox .p-listbox-list .p-listbox-item:focus,
-.p-datatable .p-sortable-column:focus {
+.p-datatable .p-sortable-column:focus,
+.p-paginator-element:focus {
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;

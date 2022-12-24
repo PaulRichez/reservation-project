@@ -7,6 +7,9 @@ import { ButtonModule } from 'primeng/button';
 import { DividerModule } from 'primeng/divider';
 import { AvatarModule } from 'primeng/avatar';
 import { TableModule } from 'primeng/table';
+import { HttpClientModule } from '@angular/common/http';
+import { StateComponent } from './components/state/state.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 const PrimesModules = [
   CardModule,
   InputTextModule,
@@ -17,14 +20,19 @@ const PrimesModules = [
 ]
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    StateComponent
+  ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    PrimesModules
+    PrimesModules,
+    HttpClientModule,
+    FontAwesomeModule
   ],
   exports: [
-    PrimesModules
-  ]
+    PrimesModules,
+    StateComponent,
+    FontAwesomeModule]
 })
 export class SharedModule { }
