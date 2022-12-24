@@ -23,7 +23,7 @@
     <ng-template pTemplate="body" let-establishment>
         <tr class="cursor-pointer" (click)="goToestablishment(establishment.id)">
             <td>{{establishment.name}}</td>
-            <td>{{establishment.type}}</td>
+            <td><i class="fa-solid fa-utensils mr-1"></i>{{establishment.type}}</td>
             <td><app-state [label]="establishment.state"></app-state></td>
         </tr>
     </ng-template>
