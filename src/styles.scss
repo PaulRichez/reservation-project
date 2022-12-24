@@ -2,7 +2,7 @@
 body {
     margin: 0;
     height: 100%;
-    background-color: var(--surface-d);
+    background-color: var(--surface-b);
     font-family: var(--font-family);
     font-weight: normal;
     color: var(--text-color);
@@ -12,4 +12,8 @@ body {
   
   * {
     box-sizing: border-box;
+  }
+
+  .max-w-1280 {
+    max-width: 1280px;
   }

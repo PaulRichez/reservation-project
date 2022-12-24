@@ -5,12 +5,15 @@ import { CardModule } from 'primeng/card';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { DividerModule } from 'primeng/divider';
-
+import { AvatarModule } from 'primeng/avatar';
+import { TableModule } from 'primeng/table';
 const PrimesModules = [
   CardModule,
   InputTextModule,
   ButtonModule,
-  DividerModule
+  DividerModule,
+  AvatarModule,
+  TableModule
 ]
 
 @NgModule({
