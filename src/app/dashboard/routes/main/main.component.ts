@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent {
-  customers!: any[];
+  establishments!: any[];
   loading: boolean = false;
 }

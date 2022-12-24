@@ -1,6 +1,6 @@
 <h3>Mes établissements</h3>
 
-<p-table #dt1 [value]="customers" dataKey="id" [rows]="10" [showCurrentPageReport]="true" [loading]="loading"
+<p-table #dt1 [value]="establishments" dataKey="id" [rows]="5" [showCurrentPageReport]="true" [loading]="loading"
     [paginator]="true" currentPageReportTemplate="{first}/{last}"
     [globalFilterFields]="['name','country.name','representative.name','status']">
     <ng-template pTemplate="caption">
