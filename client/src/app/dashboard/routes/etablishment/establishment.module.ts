@@ -9,6 +9,7 @@ import { ReservationsComponent } from './routes/reservations/reservations.compon
 import { StatsComponent } from './routes/stats/stats.component';
 import { SettingsComponent } from './routes/settings/settings.component';
 import { CalendarComponent } from './routes/reservations/components/calendar/calendar.component';
+import { FullCalendarModule } from '@fullcalendar/angular';
 
 
 
@@ -24,7 +25,8 @@ import { CalendarComponent } from './routes/reservations/components/calendar/cal
   imports: [
     CommonModule,
     establishmentRoutingModule,
-    SharedModule
+    SharedModule,
+    FullCalendarModule
   ]
 })
 export class establishmentModule { }

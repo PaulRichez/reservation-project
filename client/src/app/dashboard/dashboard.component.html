@@ -1,4 +1,8 @@
-<app-header></app-header>
-<div class="max-w-1280 mr-auto ml-auto">
-    <router-outlet></router-outlet>
+<div class="min-h-screen">
+    <div class="fixed top-0 w-full" #header>
+        <app-header></app-header>
+    </div>
+    <div class="flex max-w-1280 mr-auto ml-auto min-h-screen" [ngStyle]="{'padding-top.px':header.offsetHeight}">
+        <router-outlet></router-outlet>
+    </div>
 </div>
