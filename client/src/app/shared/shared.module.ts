@@ -10,6 +10,7 @@ import { TableModule } from 'primeng/table';
 import { HttpClientModule } from '@angular/common/http';
 import { StateComponent } from './components/state/state.component';
 import { SelectButtonModule } from 'primeng/selectbutton';
+import { DropdownModule } from 'primeng/dropdown';
 const PrimesModules = [
   CardModule,
   InputTextModule,
@@ -17,7 +18,8 @@ const PrimesModules = [
   DividerModule,
   AvatarModule,
   TableModule,
-  SelectButtonModule
+  SelectButtonModule,
+  DropdownModule
 ]
 
 @NgModule({

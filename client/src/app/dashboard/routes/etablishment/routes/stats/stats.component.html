@@ -1,1 +1,5 @@
-<p>stats works!</p>
+<div class="flex justify-content-end">
+    <p-dropdown [options]="dates" [(ngModel)]="selectedDate" placeholder="Date" optionLabel="name" optionValue="value" styleClass="w-13rem"></p-dropdown>
+</div>
+<app-stats-card></app-stats-card>
+<app-stats-card></app-stats-card>

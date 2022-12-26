@@ -11,6 +11,7 @@ import { SettingsComponent } from './routes/settings/settings.component';
 import { CalendarComponent } from './routes/reservations/components/calendar/calendar.component';
 import { FullCalendarModule } from '@fullcalendar/angular';
 import { ChartModule } from 'primeng/chart';
+import { StatsCardComponent } from './routes/stats/components/stats-card/stats-card.component';
 
 
 
@@ -22,6 +23,7 @@ import { ChartModule } from 'primeng/chart';
     StatsComponent,
     SettingsComponent,
     CalendarComponent,
+    StatsCardComponent,
   ],
   imports: [
     CommonModule,
