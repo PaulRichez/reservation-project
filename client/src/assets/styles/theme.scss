@@ -22,7 +22,7 @@
   background-color: var(--fc-today-bg-color) !important;
 }
 
-.fc-timeGridDay-view {
+.fc-timeGridDay-view, .fc-dayGridDay-view {
   .fc-day-today {
     background-color: transparent !important;
   }

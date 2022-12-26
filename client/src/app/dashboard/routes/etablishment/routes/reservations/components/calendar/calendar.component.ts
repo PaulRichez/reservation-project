@@ -29,12 +29,32 @@ export class CalendarComponent {
       this.calendarComponent.getApi().changeView('timeGridDay');
     },
   }
+  stateOptions = [
+    { icon: 'fa-solid fa-calendar', value: 'dayGridMonth' },
+    { icon: 'fa-solid fa-calendar-day', value: 'timeGridDay' },
+    { icon: 'fa-solid fa-calendar-week', value: 'dayGridDay' },
+  ];
+  viewInit: boolean = false;
   ngAfterViewInit(): void {
-    this.subSeen = setTimeout(() => { this.calendarComponent.getApi().updateSize() }, 550);
+    this.subSeen = setTimeout(() => { this.calendarComponent.getApi().updateSize(), this.viewInit = true }, 550);
   }
 
   ngOnDestroy(): void {
     clearTimeout(this.subSeen);
+  }
+
+  moveCalendar(state: string) {
+    if (state === 'prev') {
+      this.calendarComponent.getApi().prev();
+    } else if (state === 'next') {
+      this.calendarComponent.getApi().next();
+    } else if (state === 'today') {
+      this.calendarComponent.getApi().today();
+    }
+  }
+
+  changeViewCalendar(view: string) {
+    this.calendarComponent.getApi().changeView(view);
   }
 
 }
