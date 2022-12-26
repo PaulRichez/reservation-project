@@ -12,3 +12,34 @@
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
 }
+
+
+.fc-view {
+  background-color: transparent !important;
+}
+
+.fc-day-today {
+  background-color: var(--fc-today-bg-color) !important;
+}
+
+.fc-timeGridDay-view {
+  .fc-day-today {
+    background-color: transparent !important;
+  }
+
+  .fc-col-header-cell.fc-day-today {
+    background-color: var(--fc-today-bg-color) !important;
+  }
+}
+
+:root {
+  --fc-today-bg-color: var(--blue-100) !important;
+}
+
+.p-paginator, .p-datatable .p-datatable-tbody > tr {
+  background-color: var(--surface-b) !important;
+}
+
+.p-datatable .p-datatable-tbody > tr:hover {
+  background-color: var(--surface-c) !important;
+}

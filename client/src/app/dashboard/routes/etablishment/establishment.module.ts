@@ -10,6 +10,7 @@ import { StatsComponent } from './routes/stats/stats.component';
 import { SettingsComponent } from './routes/settings/settings.component';
 import { CalendarComponent } from './routes/reservations/components/calendar/calendar.component';
 import { FullCalendarModule } from '@fullcalendar/angular';
+import { ChartModule } from 'primeng/chart';
 
 
 
@@ -26,7 +27,8 @@ import { FullCalendarModule } from '@fullcalendar/angular';
     CommonModule,
     establishmentRoutingModule,
     SharedModule,
-    FullCalendarModule
+    FullCalendarModule,
+    ChartModule
   ]
 })
 export class establishmentModule { }

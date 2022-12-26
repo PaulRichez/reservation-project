@@ -8,10 +8,11 @@ import { FullCalendarComponent } from '@fullcalendar/angular/full-calendar.compo
   selector: 'app-calendar',
   templateUrl: './calendar.component.html',
   styleUrls: ['./calendar.component.scss'],
-  host: {class: 'fullComponent'},
+  host: { class: 'fullComponent' },
 })
 export class CalendarComponent {
   @ViewChild('calendar') calendarComponent!: FullCalendarComponent;
+  private subSeen: any;
   calendarOptions: CalendarOptions = {
     initialView: 'dayGridMonth',
     plugins: [dayGridPlugin, timeGridPlugin],
@@ -21,7 +22,7 @@ export class CalendarComponent {
     selectMirror: true,
     dayMaxEvents: true,
     navLinks: true,
-    // headerToolbar: false,
+    headerToolbar: false,
     navLinkDayClick: (date, jsEvent) => {
       console.log(date)
       this.calendarComponent.getApi().gotoDate(date);
@@ -29,7 +30,11 @@ export class CalendarComponent {
     },
   }
   ngAfterViewInit(): void {
-    setTimeout(() => { this.calendarComponent.getApi().updateSize() }, 550);
+    this.subSeen = setTimeout(() => { this.calendarComponent.getApi().updateSize() }, 550);
+  }
+
+  ngOnDestroy(): void {
+    clearTimeout(this.subSeen);
   }
 
 }
