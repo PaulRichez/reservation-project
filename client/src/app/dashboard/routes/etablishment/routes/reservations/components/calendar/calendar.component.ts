@@ -31,8 +31,7 @@ export class CalendarComponent {
   }
   stateOptions = [
     { icon: 'fa-solid fa-calendar', value: 'dayGridMonth' },
-    { icon: 'fa-solid fa-calendar-day', value: 'timeGridDay' },
-    { icon: 'fa-solid fa-calendar-week', value: 'dayGridDay' },
+    { icon: 'fa-solid fa-calendar-day', value: 'timeGridDay' }
   ];
   viewInit: boolean = false;
   ngAfterViewInit(): void {
