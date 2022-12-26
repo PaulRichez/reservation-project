@@ -43,3 +43,12 @@
 .p-datatable .p-datatable-tbody > tr:hover {
   background-color: var(--surface-c) !important;
 }
+
+.p-button-sm {
+  .p-selectbutton {
+    .p-button {
+     font-size: 0.875rem !important;
+     height: 42px !important;
+    }
+  }
+}

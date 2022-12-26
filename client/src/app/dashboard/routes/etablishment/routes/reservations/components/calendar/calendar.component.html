@@ -12,7 +12,7 @@
         </div>
         <div>
             <p-selectButton *ngIf="viewInit" [options]="stateOptions" [ngModel]="calendarComponent.getApi().view.type"
-                optionLabel="label" optionValue="value" (ngModelChange)="changeViewCalendar($event)">
+                optionLabel="label" optionValue="value" (ngModelChange)="changeViewCalendar($event)" class="p-button-sm">
                 <ng-template let-item>
                     <i [class]="item.icon"></i>
                 </ng-template>
